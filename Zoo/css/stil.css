@@ -1,0 +1,175 @@
+body {
+  font-size: 120%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  color: #000000;
+  background-color: #ffffcc;
+  margin: 0;
+}
+ h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-family: 'Overlock', cursive;
+  color: #516b1f;
+  letter-spacing: 3px;
+ }
+ #herzwill { /*Überschrift auf der index Seite*/
+   font-weight: bolder;
+ }
+h2 {
+  text-align: center;
+  font-family: 'Overlock', cursive;
+}
+h3 {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-style: italic;
+}
+a:link {
+  color: #768F00;
+}
+a:visited {
+  color: #406200;
+}
+a:hover {
+  background-color: #BCE46F;
+}
+:target {   /*target: interner Link (Ziel) wird nach dem Klicken gekennzeichnet z.B. "nach oben"*/
+  background-color: #749D27;
+}
+q::before {   /*Einfügen eines Icons vor einem Text*/
+  content: url("../img/pawprint1.png");
+}
+q::after {  /*Einfügen eines Icons nach einem Text*/
+  content: url("../img/pawprint2.png");
+}
+p#beate::first-letter  {    /*ZUSAMMENSCHREIBEN: für paragraph mit ID Beate soll der erste Buchstabe markiert sein*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+p#beate {   /*ID für Fußnote*/
+  margin-left: 1rem;
+}
+section {
+  text-align: center;
+  display: center;
+}
+nav {
+  background-color: #BFE600;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem;
+}
+nav a.aktuell {
+  font-weight: bold;
+}
+main {
+  max-width: 62rem;
+  margin: auto;
+  display: block; 
+}
+.links { /*die Klasse links befindet sich auf der Seite links*/
+  background-image: url("../img/links.jpg");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  width: 100vw;
+  height: 100vh; 
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+}
+.links h1 {
+  font-size: 3em;
+  color: #293f01;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: 'Courgette', cursive;
+  text-shadow: #88b13c 4px 3px 0px;
+}
+.links h2 {
+  color: #293f01;
+  font-family: 'Courgette', cursive;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.links a {
+  color: #293f01;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 0.5em;
+  font-size: 0.8em;
+}
+.links li {
+  list-style-image: url("../img/links.png");
+}
+article {
+  width: 100%;
+  margin: 0 2rem;
+}
+footer {
+  background-color: #BFE600;
+  color: #ffffff;
+  padding: 0.5rem;
+ }
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 530px) {
+  main {
+    display: block;
+  }
+} 
+.form-group { /*ich schaffe es leider nicht das Formular so zu gestalten wie ich möchte... :-( */
+  display: flex;
+  
+}
+.form-group > * { 
+  flex-basis: 100vw;
+  margin: 15px;
+  padding: 1px;
+} 
+label { /*Beschriftung der Formularfelder*/
+  text-align: center;
+}
+#button { /*dieser blöde Button wird einfach nicht schmäler, egal welche Grösse ich eingebe... bääähh... */
+  color: #fff;
+  background-color: #406200;	
+  text-align: center;
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 2rem;
+}
+td {
+  border: 1px solid black;
+}
+th {
+  background-color: #BCE46F;
+  border: 1px solid black
+}
+tr:nth-child(2n) {
+  background-color: #768F00;
+}
+blockquote { /*blockquote zur Kennzeichnung von Zitaten*/
+  text-align: center;
+  font-style: italic;
+}
+#tab { /*erste Zeile der Tabelle*/
+ font-variant: small-caps;
+}
+
